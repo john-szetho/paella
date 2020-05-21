@@ -1,0 +1,306 @@
+@font-face {
+  font-family: OCI Peace;
+  src:url('Source/Fonts/Peace-Regular.otf');
+}
+
+@font-face {
+  font-family: OCI Peace Bold;
+  src:url('Source/Fonts/Peace-Bold.otf');
+}
+
+@font-face {
+  font-family: Nostra Stream;
+  src:url('Source/Fonts/Nostra Stream.ttf');
+}
+
+@font-face {
+  font-family: Nostra Sett;
+  src:url('Source/Fonts/Nostra Sett.ttf');
+}
+
+body {
+  font-family: 'OCI Peace';
+  font-size: 12pt;
+  font-weight: normal;
+  letter-spacing: 0.2pt;
+  line-height: 1.4;
+  background-color: #f6b511;
+  color: #000;
+
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  font-family: 'Nostra Stream';
+  font-size: 5.2em;
+}
+
+h2, h3 {
+  font-family: 'OCI Peace Bold';
+  font-size: 1em;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Nostra Stream';
+}
+
+span {
+  text-transform: uppercase;
+
+  /* color: #e60026; */
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 1.2s;
+}
+
+a:hover {
+  transform: rotate(-12deg) scaleX(1.1);
+}
+
+.title h1 {
+  transition: 1.2s;
+}
+
+.title h1:hover {
+  transform: rotate(-4deg) scaleX(1.1);
+}
+
+li {
+  margin-left: 1.25em;
+  padding-left: 0.5em;
+}
+
+.checklist li {
+  list-style-type: circle;
+}
+
+.numbered li {
+  list-style-type: decimal;
+}
+
+.cbList li {
+  list-style-type: lower-latin;
+}
+
+.mainContainer {
+  padding: 0 6rem;
+}
+
+.rvlContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: -1;
+
+  opacity: 0;
+  filter: blur(6px);
+  transition: 1.2s;
+}
+
+.rvlContainer img {
+  width: calc(20vw + 100px);
+  margin: auto;
+  object-fit: contain;
+  border-radius: 100%;
+}
+
+#rvlBomba:hover .rvlContainer,
+#rvlDicedTomatoes:hover .rvlContainer {
+  opacity: 1;
+  filter: blur(0px)
+}
+
+.rvlContainerServe {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+  transition: 3s;
+}
+
+.rvlContainerServe img {
+  width: 75%;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+  border-radius: 4%;
+}
+
+#rvlServe:hover .rvlContainerServe {
+  display: block;
+}
+
+.splitContainer {
+  display: flex;
+}
+
+.ingredients, .method, .crustyBase {
+  padding: 0 1rem 0 1rem;
+}
+
+.ingredients {
+  width: 25%;
+}
+
+.method {
+  width: 50%;
+}
+
+.crustyBase {
+  width: 25%;
+}
+
+::selection {
+  background-color: #e60026;
+  color: #f6b511;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.marginTop1 {
+  margin-top: 1rem;
+}
+
+.marginTop2 {
+  margin-top: 2rem;
+}
+
+.marginTop3 {
+  margin-top: 3rem;
+}
+
+.marginBottom1 {
+  margin-bottom: 0.5rem;
+}
+
+.marginBottom2 {
+  margin-bottom: 2rem;
+}
+
+.marginBottom3 {
+  margin-bottom: 3rem;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+  text-transform: lowercase;
+}
+
+.marqueeContainer {
+  /* box-shadow: 0px 0px 6px 0px #000; */
+  background-color: #e60026;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+
+marquee,
+marquee p,
+marquee p:hover {
+  cursor: url(Source/Other/CursorAlt.png), auto;
+}
+
+marquee {
+  color: #f6b511;
+  vertical-align: middle;
+}
+
+marquee p {
+  font-family: 'Nostra Sett';
+  height: auto;
+  margin: 6px;
+  font-size: 48pt;
+}
+
+marquee p:hover {
+  transform: scaleX(-1);
+  transform: scaleY(-1);
+}
+
+.footerLinks a {
+  margin-right: 6px;
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+
+  .ingredients, .method, .crustyBase {
+    width: 100%;
+  }
+
+  .splitContainer {
+    flex-wrap: wrap;
+  }
+
+  .mainContainer {
+    padding: 0 2rem;
+  }
+
+  h1 {
+    font-size: 3.4em;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+
+  .marginTop1 {
+    margin-top: 0.5rem;
+  }
+
+  .marginTop2 {
+    margin-top: 1rem;
+  }
+
+  .marginTop3 {
+    margin-top: 1.5rem;
+  }
+
+  .marginBottom1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .marginBottom2 {
+    margin-bottom: 1rem;
+  }
+
+  .marginBottom3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .serve {
+    margin-top: 0.5em;
+    font-size: 2.2em;
+  }
+
+  #nav {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .title h1 {
+    font-size: 8.5vw;
+  }
+}

@@ -1,0 +1,2 @@
+Spanish Red: #e60026
+Spanish Yellow: #f6b511
