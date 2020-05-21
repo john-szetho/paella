@@ -1,21 +1,21 @@
 @font-face {
   font-family: OCI Peace;
-  src:url('Source/Fonts/Peace-Regular.otf');
+  src:url('/Users/jszetho/Design/github/paella/Source/Fonts/Peace-Regular.otf');
 }
 
 @font-face {
   font-family: OCI Peace Bold;
-  src:url('Source/Fonts/Peace-Bold.otf');
+  src:url('/Users/jszetho/Design/github/paella/Source/Fonts/Peace-Bold.otf');
 }
 
 @font-face {
   font-family: Nostra Stream;
-  src:url('Source/Fonts/Nostra Stream.ttf');
+  src:url('/Users/jszetho/Design/github/paella/Source/Fonts/Nostra Stream.ttf');
 }
 
 @font-face {
   font-family: Nostra Sett;
-  src:url('Source/Fonts/Nostra Sett.ttf');
+  src:url('/Users/jszetho/Design/github/paella/Source/Fonts/Nostra Sett.ttf');
 }
 
 body {
@@ -215,7 +215,7 @@ li {
 marquee,
 marquee p,
 marquee p:hover {
-  cursor: url(Source/Other/CursorAlt.png), auto;
+  cursor: url(/Users/jszetho/Design/github/paella/Source/Other/CursorAlt.png), auto;
 }
 
 marquee {
