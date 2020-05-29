@@ -39,7 +39,7 @@ a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background:
 
 del {text-decoration: line-through;}
 
-abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+abbr[title], dfn[title] {border-bottom: 1px dotted #333333; cursor: help;}
 
 table {border-collapse: separate; border-spacing: 0;}
 th {font-weight: bold; vertical-align: bottom;}

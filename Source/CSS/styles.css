@@ -25,7 +25,7 @@ body {
   letter-spacing: 0.2pt;
   line-height: 1.4;
   background-color: #f6b511;
-  color: #000;
+  color: #333333;
 
   position: relative;
   top: 0;
@@ -51,11 +51,6 @@ h3 {
   font-size: 1.4em;
 }
 
-/* header {
-  position: fixed;
-  width: 100%;
-} */
-
 .heroImg {
   background-image: url(/Source/Images/paella.jpg);
   background-size: cover;
@@ -63,12 +58,12 @@ h3 {
   background-position-y: top;
   height: 75vh;
   width: 100%;
-  border-bottom: 2px solid #000;
+  border-bottom: 4px solid #000000;
 }
 
 .mainContainer {
-  border-top: 2px solid #000;
-  margin-top: 1rem;
+  /* border-top: 2px solid #333333; */
+  /* margin-top: 1rem; */
 }
 
 span {
@@ -79,7 +74,7 @@ span {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #333333;
   transition: 1.2s;
 }
 
@@ -227,10 +222,10 @@ li {
 }
 
 .marqueeContainer {
-  /* box-shadow: 0px 0px 6px 0px #000; */
+  /* box-shadow: 0px 0px 6px 0px #333333; */
   background-color: #e60026;
-  border-top: 4px solid #000;
-  border-bottom: 4px solid #000;
+  border-top: 4px solid #000000;
+  border-bottom: 4px solid #000000;
 }
 
 marquee,
@@ -274,7 +269,6 @@ marquee p:hover {
 
   .mainContainer {
     padding: 0 2rem;
-    margin-top: 12px;
   }
 
   h1 {
